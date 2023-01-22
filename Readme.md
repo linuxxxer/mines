@@ -1,0 +1,2 @@
+# Mines 
+### Author: *Ruzinsky Balint*

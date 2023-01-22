@@ -5,18 +5,23 @@
 #ifndef MINES_MINES_H
 #define MINES_MINES_H
 
+#include "../Random/Random.h"
+
 
 class Mines {
 private:
-    int* grid;
+    int** grid;
     int height;
     int width;
-
+    int mines;
 
 public:
-    int init(int height, int width);
-    int makeNewGrid(int height, int width);
-
+    Mines();
+    ~Mines();
+    int init(int height, int width, int mines);
+    int makeNewGrid();
+    void printGrid();
+    int howManyMinesAround();
 
 };
 

@@ -3,4 +3,9 @@ project(mines)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(mines main.cpp Mines/Mines.h Mines/Mines.cpp)
+add_executable(mines
+        main.cpp
+        Mines/Mines.h
+        Mines/Mines.cpp
+        Random/Random.h
+        Random/Random.cpp)
